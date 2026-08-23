@@ -1,0 +1,169 @@
+ernestdefoe-giveaways:
+  # Server-side messages (validation + eligibility), returned localized per actor.
+  api:
+    title_required: A title is required.
+    prize_required: A prize is required.
+    ends_required: A valid end date/time is required.
+    ends_future: The end must be in the future.
+    category_name_required: A category name is required.
+    enter_login: You must be logged in to enter.
+    enter_closed: This giveaway hasn't started yet.
+    enter_ended: This giveaway has ended.
+    enter_drawn: This giveaway has already been drawn.
+    enter_cancelled: This giveaway has been cancelled.
+    enter_min_posts: "You need at least {count} posts to enter."
+    enter_too_new: Your account is too new to enter this giveaway.
+    enter_insufficient_points: "Not enough points: entering costs {cost} points, you have {balance}."
+    enter_points_unavailable: "This giveaway costs points, but the point system is currently unavailable."
+    claim_not_winner: You're not a winner of this giveaway.
+    action_failed: Something went wrong. Please try again later.
+    cancel_not_allowed: This giveaway can no longer be cancelled.
+    edit_locked: This giveaway has ended and can no longer be edited.
+    invalid_status: That status change is not allowed.
+
+  forum:
+    # Navigation & page titles
+    nav: Giveaways
+    page_title: Giveaways
+    heading: Giveaways
+    ended_title_prefix: "[Ended]"
+    subheading: Enter for a chance to win. Winners are drawn fairly and verifiably.
+    giveaway_badge_tooltip: "This topic contains a giveaway"
+    empty: No giveaways right now. Check back soon!
+    active_heading: Open now
+    past_heading: Past giveaways
+    load_more: Load more
+
+    # Card / status
+    ends_in: "Ends in {time}"
+    ended: Ended
+    draw_time: Draw time
+    starts_in: "Starts in {time}"
+    entrants: "{count} entrants"
+    entrants_label: participants
+    my_rank: My rank
+    win_chance: Win chance
+    win_chance_if_join: Win chance if you join
+    entrants_list_label: Entrants
+    no_entries: "No one has entered yet."
+    tickets: "{count, plural, one {# ticket} other {# tickets}}"
+    your_entries: "You have {count} {count, plural, one {entry} other {entries}}"
+    winners_count: "{count} {count, plural, one {winner} other {winners}}"
+    status_active: Open
+    status_drawn: Drawn
+    status_cancelled: Cancelled
+    status_draft: Draft
+
+    # Enter
+    enter: Enter giveaway
+    entered: You're entered!
+    enter_again: You're entered
+    login_to_enter: Log in to enter
+    enter_success: You're in! Good luck.
+    entry_cost_line: "Entry cost: {count}"
+    entry_balance_line: "Your balance: {balance}"
+    earn_more: Earn more entries
+    earn_post: "Post in the community for +{count} bonus {count, plural, one {entry} other {entries}}"
+    earned_post: "Bonus for posting (+{count})"
+    base_entry: Base entry
+
+    # Detail
+    prize_label: Prize
+    description_label: Details
+    requirements_label: Requirements
+    req_min_posts: "At least {count} {count, plural, one {post} other {posts}}"
+    req_min_age: "Account at least {count} {count, plural, one {day} other {days}} old"
+    req_entry_cost: "Costs {count} points to enter"
+    no_requirements: Open to all members
+    open_to_members: Open to all members
+    open_to_everyone: Open to everyone
+    open_to_groups: "Open to {groups}"
+    open_to_admins: Admins only
+    group_separator: ", "
+    winners_label: Winners
+    not_drawn_yet: Winners haven't been drawn yet.
+    no_winners: No eligible entrants — no winners were drawn.
+
+    # Provably fair
+    fairness_label: Provably fair
+    fairness_intro: This draw is verifiable. Anyone can confirm the winners weren't tampered with.
+    seed_label: Draw seed
+    hash_label: Entrant hash
+    fairness_help: The entrant hash is a SHA-256 fingerprint of the full entrant list, captured at draw time. Combined with the seed, the winner selection is fully reproducible.
+
+    # Winner claim flow
+    you_won: "You won! 🎉"
+    you_won_sub: "Congratulations — you won {prize}. Claim it so the host knows to send it your way."
+    claim: Claim your prize
+    claim_success: "Prize claimed! 🎉"
+    claimed: Claimed
+    unclaimed: Unclaimed
+    claim_next_steps: How to claim
+
+    # Notifications
+    notification:
+      won_content: You won a giveaway!
+      claimed_content: claimed their prize
+
+    # Categories
+    categories:
+      manage: Categories
+      manage_title: Manage categories
+      all: All
+      none: No categories yet.
+      add: Add category
+      name_placeholder: Category name
+      confirm_delete: Delete this category? Giveaways in it will become uncategorized.
+
+    # Create / edit
+    create: New giveaway
+    composer_button: Post a giveaway
+    edit_composer_button: Edit giveaway
+    edit: Edit
+    delete: Delete
+    draw_now: Draw now
+    cancel_giveaway: Cancel giveaway
+    confirm_cancel: Cancel this giveaway? Every entrant who paid a points fee will be refunded, and this cannot be undone.
+    confirm_delete: Delete this giveaway and all its entries?
+    confirm_draw: Draw the winners now? This ends the giveaway immediately.
+    saved: Giveaway saved.
+
+    form:
+      title_label: Title
+      title_placeholder: "e.g. Win a $50 gift card"
+      prize_label: Prize
+      prize_placeholder: What does the winner get?
+      description_label: Description
+      description_placeholder: Rules, eligibility, how the prize is delivered…
+      cover_label: Cover image URL
+      cover_placeholder: https://…
+      category_label: Category
+      category_none: "— None —"
+      claim_label: Claim instructions
+      claim_placeholder: "e.g. DM me your shipping address or email to receive your prize."
+      claim_help: Shown to each winner after they claim, so they know how to receive the prize.
+      ends_label: Ends at
+      starts_label: Starts at (optional)
+      winner_count_label: Number of winners
+      post_bonus_label: Bonus entries for posting
+      post_bonus_help: One-time bonus granted when an entrant posts anywhere in the community.
+      min_posts_label: Minimum posts to enter
+      min_age_label: Minimum account age (days)
+      entry_cost_label: Points cost to enter
+      entry_cost_help: Charged once from the entrant's point balance when they enter (requires ramon/point-system). 0 = free.
+      submit: Save giveaway
+      cancel: Cancel
+
+  admin:
+    settings_title: Giveaways
+    permissions_title: Giveaways
+    perm_enter: Enter giveaways
+    perm_view_entries: View entrant lists
+    perm_create: Create & manage own giveaways
+    perm_manage: Manage all giveaways
+    nav_label_setting: Navigation label
+    nav_label_help: The text shown in the forum navigation for the giveaways page.
+    show_nav_setting: Show a "Giveaways" link in the main navigation
+    scheduler_checking: Checking scheduler status…
+    scheduler_ok: "Scheduler is running normally (last run: {time})."
+    scheduler_stale: "The scheduler has not run in over 15 minutes — automatic draws may be stalled. Make sure cron runs `php flarum schedule:run` every minute."

@@ -1,0 +1,148 @@
+ernestdefoe-giveaways:
+  api:
+    title_required: "必须填写标题。"
+    prize_required: "必须填写奖品。"
+    ends_required: "必须填写有效的结束日期/时间。"
+    ends_future: "结束时间必须在未来。"
+    category_name_required: "必须填写分类名称。"
+    enter_login: "您必须登录后才能参与。"
+    enter_closed: "该抽奖活动尚未开始。"
+    enter_ended: "该抽奖活动已结束。"
+    enter_drawn: "该抽奖活动已开奖，无法参与。"
+    enter_cancelled: "该抽奖活动已取消，无法参与。"
+    enter_min_posts: "您需要至少发帖 {count} 条才能参与。"
+    enter_too_new: "您的账号注册时间太短，无法参与此抽奖。"
+    enter_insufficient_points: "积分不足：参与需要 {cost} 积分，您当前有 {balance} 积分。"
+    enter_points_unavailable: "此抽奖需消耗积分，但积分系统当前不可用。"
+    claim_not_winner: "您不是此抽奖活动的获奖者。"
+    action_failed: "操作失败，请稍后再试。"
+    cancel_not_allowed: "该抽奖活动已无法取消。"
+    edit_locked: "该抽奖活动已结束，无法再编辑。"
+    invalid_status: "不允许该状态变更。"
+  forum:
+    nav: 抽奖活动
+    page_title: 抽奖活动
+    heading: 抽奖活动
+    ended_title_prefix: "[已结束]"
+    subheading: "参与抽奖，赢取好礼。中奖名单开奖公开透明且可验证。"
+    giveaway_badge_tooltip: "抽奖"
+    empty: "暂无抽奖活动，过段时间再来看看吧！"
+    active_heading: "正在进行"
+    past_heading: "往期抽奖"
+    load_more: "加载更多"
+    ends_in: "{time} 后结束"
+    ended: 已结束
+    draw_time: 开奖时间
+    starts_in: "{time} 后开始"
+    entrants: "{count} 人参与"
+    entrants_label: 人参与
+    my_rank: 我的名次
+    win_chance: 中奖概率
+    win_chance_if_join: 加入后中奖概率
+    entrants_list_label: 参与名单
+    no_entries: "还没有人参与。"
+    tickets: "{count} 个名额"
+    your_entries: "您拥有 {count} 个抽奖条目"
+    winners_count: "{count} 名获奖者"
+    status_active: 进行中
+    status_drawn: 已开奖
+    status_cancelled: 已取消
+    status_draft: 草稿
+    enter: "参与抽奖"
+    entered: "您已参与！"
+    enter_again: "您已参与"
+    login_to_enter: "登录以参与"
+    enter_success: "成功参与！祝你好运。"
+    entry_cost_line: "参与积分：{count}"
+    entry_balance_line: "您的余额：{balance}"
+    earn_more: "获取更多抽奖券"
+    earn_post: "在社区发帖可获得 +{count} 额外抽奖券"
+    earned_post: "发帖奖励已发放 (+{count})"
+    base_entry: "基础参与券"
+    prize_label: 奖品
+    description_label: 详情
+    requirements_label: 参与条件
+    req_min_posts: "至少发帖 {count} 条"
+    req_min_age: "账号注册时间至少 {count} 天"
+    req_entry_cost: "参与需消耗 {count} 积分"
+    no_requirements: "面向所有成员开放"
+    open_to_members: "面向所有成员开放"
+    open_to_everyone: "面向所有人开放"
+    open_to_groups: "面向 {groups} 开放"
+    open_to_admins: "仅管理员可参与"
+    group_separator: "、"
+    winners_label: 获奖名单
+    not_drawn_yet: "尚未开奖。"
+    no_winners: "没有符合条件的参与者，未抽取获奖者。"
+    fairness_label: "可验证公平性"
+    fairness_intro: "本次抽奖结果可被验证。任何人都可以确认中奖名单未被篡改。"
+    seed_label: "抽奖种子 (Seed)"
+    hash_label: "参与者哈希值 (Hash)"
+    fairness_help: "参与者哈希值是在开奖时刻捕获的完整参与者列表的 SHA-256 指纹。结合抽奖种子，中奖结果完全可被重复计算验证。"
+    you_won: "恭喜中奖！🎉"
+    you_won_sub: "恭喜！您赢得了 {prize}。请领取奖品，以便发起者将其发放给您。"
+    claim: "领取奖品"
+    claim_success: "奖品已领取！🎉"
+    claimed: 已领取
+    unclaimed: 未领取
+    claim_next_steps: "领奖指南"
+    notification:
+      won_content: "您在抽奖活动中中奖了！"
+      claimed_content: "已领取其奖品"
+    categories:
+      manage: 分类
+      manage_title: "管理分类"
+      all: 全部
+      none: "暂无分类。"
+      add: "添加分类"
+      name_placeholder: "分类名称"
+      confirm_delete: "确定删除此分类？该分类下的抽奖活动将变为未分类状态。"
+    create: "发布抽奖"
+    composer_button: "发布抽奖"
+    edit_composer_button: "编辑抽奖"
+    edit: 编辑
+    delete: 删除
+    draw_now: "开奖"
+    confirm_delete: "确定要删除此抽奖活动及其所有参与记录吗？"
+    confirm_draw: "确定要立即开奖吗？这将立即结束该抽奖活动。"
+    cancel_giveaway: "取消抽奖"
+    confirm_cancel: "确定要取消该抽奖活动吗？所有已支付积分的参与者将获得退款，且此操作无法撤销。"
+    saved: "抽奖活动已保存。"
+    form:
+      title_label: 标题
+      title_placeholder: "例：赢取 50 美元礼品卡"
+      prize_label: 奖品
+      prize_placeholder: "获奖者将获得什么？"
+      description_label: 描述
+      description_placeholder: "活动规则、参与资格、奖品发放方式……"
+      cover_label: "封面图片 URL"
+      cover_placeholder: "https://…"
+      category_label: 分类
+      category_none: "— 无 —"
+      claim_label: "领奖说明"
+      claim_placeholder: "例：请私信我您的收货地址或电子邮箱以接收奖品。"
+      claim_help: "获奖者在点击“领取”后会看到此说明，以便了解如何接收奖品。"
+      ends_label: "结束时间"
+      starts_label: "开始时间（可选）"
+      winner_count_label: "获奖人数"
+      post_bonus_label: "发帖额外奖励条目"
+      post_bonus_help: "当参与者在社区任何地方发帖时给予的一次性奖励。"
+      min_posts_label: "参与所需的最少发帖数"
+      min_age_label: "最少账号注册天数"
+      entry_cost_label: "参与所需积分"
+      entry_cost_help: "参与者加入时将从其积分余额中一次性扣除（需要 ramon/point-system 积分扩展）。0 表示免费参与。"
+      submit: "保存抽奖活动"
+      cancel: 取消
+  admin:
+    settings_title: 抽奖活动
+    permissions_title: 抽奖活动
+    perm_enter: "参与抽奖"
+    perm_view_entries: "查看参与名单"
+    perm_create: "创建和管理自己的抽奖活动"
+    perm_manage: "管理所有抽奖活动"
+    nav_label_setting: "导航栏文本"
+    nav_label_help: "在论坛导航栏中显示的抽奖页面名称。"
+    show_nav_setting: "在主导航栏中显示“抽奖活动”链接"
+    scheduler_checking: "正在检查调度器状态…"
+    scheduler_ok: "调度器运行正常（最近一次运行：{time}）。"
+    scheduler_stale: "调度器已超过 15 分钟未运行，自动开奖可能失效。请配置 cron 每分钟执行 `php flarum schedule:run`。"
