@@ -1,0 +1,45 @@
+<?php
+
+namespace Ygpynet\Giveaways;
+
+use Flarum\Database\AbstractModel;
+use Flarum\User\User;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+
+/**
+ * @property int $id
+ * @property int $giveaway_id
+ * @property int $user_id
+ * @property int $entries
+ * @property int $paid_amount
+ * @property string|null $sources
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
+ * @property \Ygpynet\Giveaways\Giveaway $giveaway
+ * @property \Flarum\User\User $user
+ */
+class GiveawayEntry extends AbstractModel
+{
+    protected $table = 'giveaway_entries';
+
+    protected $casts = [
+        'entries'     => 'integer',
+        'paid_amount' => 'integer',
+        'created_at'  => 'datetime',
+    ];
+
+    public function giveaway(): BelongsTo
+    {
+        return $this->belongsTo(Giveaway::class);
+    }
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function sourcesArray(): array
+    {
+        return json_decode((string) $this->sources, true) ?: [];
+    }
+}
