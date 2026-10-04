@@ -2,13 +2,24 @@
 
 > **Read-only archive of released versions of ygpynet/giveaways.** Not for installation: use [Packagist](https://packagist.org/packages/ygpynet/giveaways) or the [upstream repository](https://github.com/ygpynet/giveaways).
 
-**0** versions archived · Latest: [`v1.4.0`](https://github.com/flarchive/ygpynet-giveaways/tree/archive/v1.4.0) · License: `MIT` · Flarum: `^2.0.0-rc.5`
+**17** versions archived · Latest: [`v1.4.0`](https://github.com/flarchive/ygpynet-giveaways/tree/archive/v1.4.0) · License: `MIT` · Flarum: `^2.0.0-rc.5`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v0.3.0` | 2026-08-13 | `^2.0` | [Browse](https://github.com/flarchive/ygpynet-giveaways/tree/archive/v0.3.0) |
+| `v0.3.1` | 2026-08-13 | `^2.0` | [Browse](https://github.com/flarchive/ygpynet-giveaways/tree/archive/v0.3.1) |
+| `v0.3.2` | 2026-08-14 | `^2.0.0-rc.5` | [Browse](https://github.com/flarchive/ygpynet-giveaways/tree/archive/v0.3.2) |
+| `v0.4.0` | 2026-08-15 | `^2.0.0-rc.5` | [Browse](https://github.com/flarchive/ygpynet-giveaways/tree/archive/v0.4.0) |
+| `v1.0.0` | 2026-08-15 | `^2.0.0-rc.5` | [Browse](https://github.com/flarchive/ygpynet-giveaways/tree/archive/v1.0.0) |
+| `v1.0.1` | 2026-08-21 | `^2.0.0-rc.5` | [Browse](https://github.com/flarchive/ygpynet-giveaways/tree/archive/v1.0.1) |
+| `v1.0.2` | 2026-08-23 | `^2.0.0-rc.5` | [Browse](https://github.com/flarchive/ygpynet-giveaways/tree/archive/v1.0.2) |
+| `v1.0.3` | 2026-08-23 | `^2.0.0-rc.5` | [Browse](https://github.com/flarchive/ygpynet-giveaways/tree/archive/v1.0.3) |
+| `v1.0.4` | 2026-08-23 | `^2.0.0-rc.5` | [Browse](https://github.com/flarchive/ygpynet-giveaways/tree/archive/v1.0.4) |
+| `v1.0.5` | 2026-08-23 | `^2.0.0-rc.5` | [Browse](https://github.com/flarchive/ygpynet-giveaways/tree/archive/v1.0.5) |
+
+[View all 17 versions](https://github.com/flarchive/ygpynet-giveaways/tags)
 
 Catalog entry: [packages/ygpynet-giveaways.json](https://github.com/flarchive/archive-index/blob/main/packages/ygpynet-giveaways.json)
 
