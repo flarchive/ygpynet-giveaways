@@ -1,0 +1,11 @@
+parameters:
+    level: 5
+    paths:
+        - src
+        - extend.php
+    scanFiles:
+        # Analysis-only stubs for the optional ramon/point-system dependency
+        # (see tests/stubs/ramon_point_system.php header).
+        - tests/stubs/ramon_point_system.php
+    tmpDir: .phpstan-cache
+    reportUnmatchedIgnoredErrors: false
