@@ -1,0 +1,75 @@
+{
+  "name": "ygpynet/giveaways",
+  "description": "Run provably-fair giveaways and raffles on your Flarum 2 forum — earn-entries engine, scheduled auto-draws, winner notifications.",
+  "type": "flarum-extension",
+  "license": "MIT",
+  "keywords": [
+    "flarum",
+    "extension",
+    "giveaway",
+    "raffle",
+    "contest",
+    "sweepstakes"
+  ],
+  "authors": [
+    {
+      "name": "ygpynet",
+      "email": "ygpynet@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/ygpynet/giveaways/issues",
+    "source": "https://github.com/ygpynet/giveaways"
+  },
+  "minimum-stability": "RC",
+  "prefer-stable": true,
+  "require": {
+    "flarum/core": "^2.0.0-rc.5"
+  },
+  "suggest": {
+    "ramon/point-system": "Required to charge points for entering giveaways (entry_cost_points)."
+  },
+  "require-dev": {
+    "flarum/testing": "^2.0.0-rc.5",
+    "phpstan/phpstan": "^2.2",
+    "phpunit/phpunit": "^12.5.22"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ygpynet\\Giveaways\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ygpynet\\Giveaways\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "@test:unit",
+      "@test:integration"
+    ],
+    "test:unit": "phpunit -c phpunit.xml.dist",
+    "test:integration": "phpunit -c tests/phpunit.integration.xml",
+    "test:setup": "@php tests/Integration/setup.php",
+    "analyse:phpstan": "phpstan analyse"
+  },
+  "scripts-descriptions": {
+    "test": "Runs all tests.",
+    "test:unit": "Runs all unit tests.",
+    "test:integration": "Runs the flarum/testing integration suite (needs a local MySQL test DB; see tests/Integration/setup.php).",
+    "test:setup": "One-time install of the throwaway test forum (drops all tables in the TEST database only).",
+    "analyse:phpstan": "Run static analysis."
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Giveaways",
+      "category": "feature",
+      "icon": {
+        "name": "fas fa-gift",
+        "backgroundColor": "#69c6b9",
+        "color": "#1A2744"
+      }
+    }
+  }
+}
